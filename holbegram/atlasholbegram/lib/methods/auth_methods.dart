@@ -17,6 +17,7 @@ class AuthMethode {
                 email: email,
                 password: password,
             );
+            // ignore: unused_local_variable
             var user = userCredential.user;
             return 'Success';
         } catch (e) {
