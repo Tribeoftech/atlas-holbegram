@@ -1,5 +1,5 @@
 # Uncomment this line to define a global platform for your project
-platform :osx, '14.0'
+platform :osx, '17.0'
 
 
 # CocoaPods analytics sends network stats synchronously affecting flutter build latency.
