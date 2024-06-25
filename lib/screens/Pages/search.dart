@@ -61,11 +61,9 @@ class SearchScreen extends StatelessWidget {
                     final document = snapshot.data!.docs[index];
                     final itemData = document.data() as Map<String, dynamic>;
                     final Post post = Post.fromJson(itemData);
-                    return Container(
-                      child: Image.network(
-                        post.postUrl,
-                        fit: BoxFit.cover,
-                      ),
+                    return Image.network(
+                      post.postUrl,
+                      fit: BoxFit.cover,
                     );
                   },
                   childCount: snapshot.data!.docs.length,
