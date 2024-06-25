@@ -40,7 +40,7 @@ class SearchScreen extends StatelessWidget {
               return const Center(child: CircularProgressIndicator());
             }
     
-            final data = snapshot.data!.docs;
+            final List() = snapshot.data!.docs;
     
             return Padding(
               padding: const EdgeInsets.all(4.0),
