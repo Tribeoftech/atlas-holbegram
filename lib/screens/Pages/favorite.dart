@@ -4,12 +4,18 @@ import 'package:holbegram/providers/user_provider.dart';
 import 'package:holbegram/screens/Pages/methods/post_storage.dart';
 import 'package:provider/provider.dart';
 
-class FavoriteScreen extends StatelessWidget {
+mixin FavoriteScreen implements StatefulWidget {
  
+
+  
+
+  @override
+  State<FavoriteScreen> createState() => _FavoriteScreenState();
+}
+
+class _FavoriteScreenState extends State<FavoriteScreen> {
  List<dynamic> postsIds = [];
 
-  FavoriteScreen({super.key});
- 
   @override
   Widget build(BuildContext context) {
     final userProvider = Provider.of<UserProvider>(context);
