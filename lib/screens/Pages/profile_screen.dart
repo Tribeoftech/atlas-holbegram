@@ -6,6 +6,7 @@ import 'package:holbegram/screens/login_screen.dart';
 import 'package:provider/provider.dart';
 import 'package:holbegram/methods/auth_methods.dart';
 
+// ignore: must_be_immutable
 class ProfileScreen extends StatefulWidget {
    ProfileScreen({super.key});
 
